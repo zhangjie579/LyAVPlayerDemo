@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		205DF0B7F8011AF9DD4DF5E0 /* Pods_LyAVPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1456B4154D35101A8369B50 /* Pods_LyAVPlayerDemo.framework */; };
+		2F7E714E1EC6C63D0017897A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E714D1EC6C63D0017897A /* main.m */; };
+		2F7E71511EC6C63D0017897A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E71501EC6C63D0017897A /* AppDelegate.m */; };
+		2F7E71541EC6C63D0017897A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E71531EC6C63D0017897A /* ViewController.m */; };
+		2F7E71571EC6C63D0017897A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E71551EC6C63D0017897A /* Main.storyboard */; };
+		2F7E71591EC6C63D0017897A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E71581EC6C63D0017897A /* Assets.xcassets */; };
+		2F7E715C1EC6C63D0017897A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E715A1EC6C63D0017897A /* LaunchScreen.storyboard */; };
+		2F7E71671EC6C63D0017897A /* LyAVPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E71661EC6C63D0017897A /* LyAVPlayerDemoTests.m */; };
+		2F7E71721EC6C63D0017897A /* LyAVPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E71711EC6C63D0017897A /* LyAVPlayerDemoUITests.m */; };
+		2FD1F3B81EC8123900BDA534 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3B71EC8123900BDA534 /* GPUImageBeautifyFilter.m */; };
+		2FD1F3BB1EC812E900BDA534 /* LyGPUImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3BA1EC812E900BDA534 /* LyGPUImage.m */; };
+		2FD1F3BF1EC839E500BDA534 /* LyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3BE1EC839E500BDA534 /* LyViewController.swift */; };
+		2FD1F3C31EC83A4000BDA534 /* LyVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3C21EC83A4000BDA534 /* LyVideoCamera.m */; };
+		2FD1F3C61EC8445900BDA534 /* LyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3C51EC8445900BDA534 /* LyOpenGLView.m */; };
+		2FD1F3CA1EC848EE00BDA534 /* LyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1F3C91EC848EE00BDA534 /* LyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F7E71631EC6C63D0017897A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7E71411EC6C63D0017897A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7E71481EC6C63D0017897A;
+			remoteInfo = LyAVPlayerDemo;
+		};
+		2F7E716E1EC6C63D0017897A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7E71411EC6C63D0017897A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7E71481EC6C63D0017897A;
+			remoteInfo = LyAVPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		260158F7652655BC052CC8B6 /* Pods-LyAVPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyAVPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyAVPlayerDemo/Pods-LyAVPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2F7E71491EC6C63D0017897A /* LyAVPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyAVPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7E714D1EC6C63D0017897A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F7E714F1EC6C63D0017897A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F7E71501EC6C63D0017897A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F7E71521EC6C63D0017897A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F7E71531EC6C63D0017897A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F7E71561EC6C63D0017897A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F7E71581EC6C63D0017897A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F7E715B1EC6C63D0017897A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F7E715D1EC6C63D0017897A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7E71621EC6C63D0017897A /* LyAVPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyAVPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7E71661EC6C63D0017897A /* LyAVPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyAVPlayerDemoTests.m; sourceTree = "<group>"; };
+		2F7E71681EC6C63D0017897A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7E716D1EC6C63D0017897A /* LyAVPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyAVPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7E71711EC6C63D0017897A /* LyAVPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyAVPlayerDemoUITests.m; sourceTree = "<group>"; };
+		2F7E71731EC6C63D0017897A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD1F3B61EC8123900BDA534 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		2FD1F3B71EC8123900BDA534 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		2FD1F3B91EC812E900BDA534 /* LyGPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyGPUImage.h; sourceTree = "<group>"; };
+		2FD1F3BA1EC812E900BDA534 /* LyGPUImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyGPUImage.m; sourceTree = "<group>"; };
+		2FD1F3BE1EC839E500BDA534 /* LyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyViewController.swift; sourceTree = "<group>"; };
+		2FD1F3C11EC83A4000BDA534 /* LyVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyVideoCamera.h; sourceTree = "<group>"; };
+		2FD1F3C21EC83A4000BDA534 /* LyVideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyVideoCamera.m; sourceTree = "<group>"; };
+		2FD1F3C41EC8445900BDA534 /* LyOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyOpenGLView.h; sourceTree = "<group>"; };
+		2FD1F3C51EC8445900BDA534 /* LyOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyOpenGLView.m; sourceTree = "<group>"; };
+		2FD1F3C71EC8486A00BDA534 /* LyAVPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LyAVPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FD1F3C81EC848EE00BDA534 /* LyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyViewController.h; sourceTree = "<group>"; };
+		2FD1F3C91EC848EE00BDA534 /* LyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyViewController.m; sourceTree = "<group>"; };
+		434DE8DC105E72FB1476BF49 /* Pods-LyAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyAVPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyAVPlayerDemo/Pods-LyAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1456B4154D35101A8369B50 /* Pods_LyAVPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyAVPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F7E71461EC6C63D0017897A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205DF0B7F8011AF9DD4DF5E0 /* Pods_LyAVPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E715F1EC6C63D0017897A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E716A1EC6C63D0017897A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B56B6DBC2A998EBF8C5308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1456B4154D35101A8369B50 /* Pods_LyAVPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F7E71401EC6C63D0017897A = {
+			isa = PBXGroup;
+			children = (
+				2F7E714B1EC6C63D0017897A /* LyAVPlayerDemo */,
+				2F7E71651EC6C63D0017897A /* LyAVPlayerDemoTests */,
+				2F7E71701EC6C63D0017897A /* LyAVPlayerDemoUITests */,
+				2F7E714A1EC6C63D0017897A /* Products */,
+				CD710F17982EDB33FF94AAE5 /* Pods */,
+				29B56B6DBC2A998EBF8C5308 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F7E714A1EC6C63D0017897A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F7E71491EC6C63D0017897A /* LyAVPlayerDemo.app */,
+				2F7E71621EC6C63D0017897A /* LyAVPlayerDemoTests.xctest */,
+				2F7E716D1EC6C63D0017897A /* LyAVPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F7E714B1EC6C63D0017897A /* LyAVPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3C01EC839FA00BDA534 /* 视频采集封装 */,
+				2FD1F3BC1EC839E500BDA534 /* swift */,
+				2FD1F3B01EC811F800BDA534 /* GPUImage美颜效果 */,
+				2F7E714F1EC6C63D0017897A /* AppDelegate.h */,
+				2F7E71501EC6C63D0017897A /* AppDelegate.m */,
+				2F7E71521EC6C63D0017897A /* ViewController.h */,
+				2F7E71531EC6C63D0017897A /* ViewController.m */,
+				2F7E71551EC6C63D0017897A /* Main.storyboard */,
+				2F7E71581EC6C63D0017897A /* Assets.xcassets */,
+				2F7E715A1EC6C63D0017897A /* LaunchScreen.storyboard */,
+				2F7E715D1EC6C63D0017897A /* Info.plist */,
+				2F7E714C1EC6C63D0017897A /* Supporting Files */,
+			);
+			path = LyAVPlayerDemo;
+			sourceTree = "<group>";
+		};
+		2F7E714C1EC6C63D0017897A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3C71EC8486A00BDA534 /* LyAVPlayerDemo-Bridging-Header.h */,
+				2F7E714D1EC6C63D0017897A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F7E71651EC6C63D0017897A /* LyAVPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F7E71661EC6C63D0017897A /* LyAVPlayerDemoTests.m */,
+				2F7E71681EC6C63D0017897A /* Info.plist */,
+			);
+			path = LyAVPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		2F7E71701EC6C63D0017897A /* LyAVPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F7E71711EC6C63D0017897A /* LyAVPlayerDemoUITests.m */,
+				2F7E71731EC6C63D0017897A /* Info.plist */,
+			);
+			path = LyAVPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		2FD1F3B01EC811F800BDA534 /* GPUImage美颜效果 */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3B51EC8123900BDA534 /* BeautifyFilter */,
+				2FD1F3B91EC812E900BDA534 /* LyGPUImage.h */,
+				2FD1F3BA1EC812E900BDA534 /* LyGPUImage.m */,
+			);
+			path = "GPUImage美颜效果";
+			sourceTree = "<group>";
+		};
+		2FD1F3B51EC8123900BDA534 /* BeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3B61EC8123900BDA534 /* GPUImageBeautifyFilter.h */,
+				2FD1F3B71EC8123900BDA534 /* GPUImageBeautifyFilter.m */,
+			);
+			path = BeautifyFilter;
+			sourceTree = "<group>";
+		};
+		2FD1F3BC1EC839E500BDA534 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3BE1EC839E500BDA534 /* LyViewController.swift */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		2FD1F3C01EC839FA00BDA534 /* 视频采集封装 */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1F3C11EC83A4000BDA534 /* LyVideoCamera.h */,
+				2FD1F3C21EC83A4000BDA534 /* LyVideoCamera.m */,
+				2FD1F3C41EC8445900BDA534 /* LyOpenGLView.h */,
+				2FD1F3C51EC8445900BDA534 /* LyOpenGLView.m */,
+				2FD1F3C81EC848EE00BDA534 /* LyViewController.h */,
+				2FD1F3C91EC848EE00BDA534 /* LyViewController.m */,
+			);
+			path = "视频采集封装";
+			sourceTree = "<group>";
+		};
+		CD710F17982EDB33FF94AAE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				434DE8DC105E72FB1476BF49 /* Pods-LyAVPlayerDemo.debug.xcconfig */,
+				260158F7652655BC052CC8B6 /* Pods-LyAVPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F7E71481EC6C63D0017897A /* LyAVPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7E71761EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemo" */;
+			buildPhases = (
+				F0015F5DDD0EAA2F08607E4A /* [CP] Check Pods Manifest.lock */,
+				2F7E71451EC6C63D0017897A /* Sources */,
+				2F7E71461EC6C63D0017897A /* Frameworks */,
+				2F7E71471EC6C63D0017897A /* Resources */,
+				64E038229017293DD9CC0FB5 /* [CP] Embed Pods Frameworks */,
+				E2E681BCCFBE52AB558B556D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyAVPlayerDemo;
+			productName = LyAVPlayerDemo;
+			productReference = 2F7E71491EC6C63D0017897A /* LyAVPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F7E71611EC6C63D0017897A /* LyAVPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7E71791EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemoTests" */;
+			buildPhases = (
+				2F7E715E1EC6C63D0017897A /* Sources */,
+				2F7E715F1EC6C63D0017897A /* Frameworks */,
+				2F7E71601EC6C63D0017897A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F7E71641EC6C63D0017897A /* PBXTargetDependency */,
+			);
+			name = LyAVPlayerDemoTests;
+			productName = LyAVPlayerDemoTests;
+			productReference = 2F7E71621EC6C63D0017897A /* LyAVPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F7E716C1EC6C63D0017897A /* LyAVPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7E717C1EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemoUITests" */;
+			buildPhases = (
+				2F7E71691EC6C63D0017897A /* Sources */,
+				2F7E716A1EC6C63D0017897A /* Frameworks */,
+				2F7E716B1EC6C63D0017897A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F7E716F1EC6C63D0017897A /* PBXTargetDependency */,
+			);
+			name = LyAVPlayerDemoUITests;
+			productName = LyAVPlayerDemoUITests;
+			productReference = 2F7E716D1EC6C63D0017897A /* LyAVPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F7E71411EC6C63D0017897A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "张杰";
+				TargetAttributes = {
+					2F7E71481EC6C63D0017897A = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					2F7E71611EC6C63D0017897A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F7E71481EC6C63D0017897A;
+					};
+					2F7E716C1EC6C63D0017897A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F7E71481EC6C63D0017897A;
+					};
+				};
+			};
+			buildConfigurationList = 2F7E71441EC6C63D0017897A /* Build configuration list for PBXProject "LyAVPlayerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F7E71401EC6C63D0017897A;
+			productRefGroup = 2F7E714A1EC6C63D0017897A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F7E71481EC6C63D0017897A /* LyAVPlayerDemo */,
+				2F7E71611EC6C63D0017897A /* LyAVPlayerDemoTests */,
+				2F7E716C1EC6C63D0017897A /* LyAVPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F7E71471EC6C63D0017897A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7E715C1EC6C63D0017897A /* LaunchScreen.storyboard in Resources */,
+				2F7E71591EC6C63D0017897A /* Assets.xcassets in Resources */,
+				2F7E71571EC6C63D0017897A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E71601EC6C63D0017897A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E716B1EC6C63D0017897A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64E038229017293DD9CC0FB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyAVPlayerDemo/Pods-LyAVPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E681BCCFBE52AB558B556D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LyAVPlayerDemo/Pods-LyAVPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0015F5DDD0EAA2F08607E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F7E71451EC6C63D0017897A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7E71541EC6C63D0017897A /* ViewController.m in Sources */,
+				2FD1F3BB1EC812E900BDA534 /* LyGPUImage.m in Sources */,
+				2FD1F3B81EC8123900BDA534 /* GPUImageBeautifyFilter.m in Sources */,
+				2FD1F3BF1EC839E500BDA534 /* LyViewController.swift in Sources */,
+				2FD1F3CA1EC848EE00BDA534 /* LyViewController.m in Sources */,
+				2F7E71511EC6C63D0017897A /* AppDelegate.m in Sources */,
+				2FD1F3C31EC83A4000BDA534 /* LyVideoCamera.m in Sources */,
+				2FD1F3C61EC8445900BDA534 /* LyOpenGLView.m in Sources */,
+				2F7E714E1EC6C63D0017897A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E715E1EC6C63D0017897A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7E71671EC6C63D0017897A /* LyAVPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7E71691EC6C63D0017897A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7E71721EC6C63D0017897A /* LyAVPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F7E71641EC6C63D0017897A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7E71481EC6C63D0017897A /* LyAVPlayerDemo */;
+			targetProxy = 2F7E71631EC6C63D0017897A /* PBXContainerItemProxy */;
+		};
+		2F7E716F1EC6C63D0017897A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7E71481EC6C63D0017897A /* LyAVPlayerDemo */;
+			targetProxy = 2F7E716E1EC6C63D0017897A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F7E71551EC6C63D0017897A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7E71561EC6C63D0017897A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F7E715A1EC6C63D0017897A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7E715B1EC6C63D0017897A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F7E71741EC6C63D0017897A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F7E71751EC6C63D0017897A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F7E71771EC6C63D0017897A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434DE8DC105E72FB1476BF49 /* Pods-LyAVPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LyAVPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LyAVPlayerDemo/LyAVPlayerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2F7E71781EC6C63D0017897A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260158F7652655BC052CC8B6 /* Pods-LyAVPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LyAVPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LyAVPlayerDemo/LyAVPlayerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2F7E717A1EC6C63D0017897A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LyAVPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyAVPlayerDemo.app/LyAVPlayerDemo";
+			};
+			name = Debug;
+		};
+		2F7E717B1EC6C63D0017897A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LyAVPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyAVPlayerDemo.app/LyAVPlayerDemo";
+			};
+			name = Release;
+		};
+		2F7E717D1EC6C63D0017897A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LyAVPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LyAVPlayerDemo;
+			};
+			name = Debug;
+		};
+		2F7E717E1EC6C63D0017897A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LyAVPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangjie.LyAVPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LyAVPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F7E71441EC6C63D0017897A /* Build configuration list for PBXProject "LyAVPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7E71741EC6C63D0017897A /* Debug */,
+				2F7E71751EC6C63D0017897A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7E71761EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7E71771EC6C63D0017897A /* Debug */,
+				2F7E71781EC6C63D0017897A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7E71791EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7E717A1EC6C63D0017897A /* Debug */,
+				2F7E717B1EC6C63D0017897A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7E717C1EC6C63D0017897A /* Build configuration list for PBXNativeTarget "LyAVPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7E717D1EC6C63D0017897A /* Debug */,
+				2F7E717E1EC6C63D0017897A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F7E71411EC6C63D0017897A /* Project object */;
+}
