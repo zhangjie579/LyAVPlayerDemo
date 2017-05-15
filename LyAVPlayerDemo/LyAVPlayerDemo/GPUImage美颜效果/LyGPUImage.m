@@ -53,17 +53,33 @@
     GPUImageView *preview = [[GPUImageView alloc] initWithFrame:self.bounds];
     [self insertSubview:preview atIndex:0];
     
-//    // 怎么处理GPUImage返回数据
-//    GPUImageRawDataOutput *rawDataOutput = [[GPUImageRawDataOutput alloc] initWithImageSize:self.bounds.size resultsInBGRAFormat:NO];
-//
-//    __weak typeof(GPUImageRawDataOutput) *weakRawDataOutput = rawDataOutput;
-//
-//    rawDataOutput.newFrameAvailableBlock = ^{
-//
-//        NSLog(@"%s",weakRawDataOutput.rawBytesForImage);
-//        NSLog(@"处理完一帧就会调用");
-//
-//    };
+    // 怎么处理GPUImage返回数据
+    GPUImageRawDataOutput *rawDataOutput = [[GPUImageRawDataOutput alloc] initWithImageSize:self.bounds.size resultsInBGRAFormat:NO];
+    
+    __weak typeof(GPUImageRawDataOutput) *weakRawDataOutput = rawDataOutput;
+    
+    rawDataOutput.newFrameAvailableBlock = ^{
+        
+        [weakRawDataOutput lockFramebufferForReading];
+        
+        // 只要处理好一帧数据就会调用
+        // 获取处理好一帧获取
+        // 获取图片总字节数
+        GLubyte *rawBytes = weakRawDataOutput.rawBytesForImage;
+        NSUInteger perRow = weakRawDataOutput.bytesPerRowInOutput;
+        
+        
+        // 创建图片信息
+        CVPixelBufferRef pixelBufferOut;
+        CVPixelBufferCreate(kCFAllocatorDefault, 1280, 720, kCVPixelFormatType_420YpCbCr8Planar, NULL, &pixelBufferOut);
+        
+        [weakRawDataOutput unlockFramebufferAfterReading];
+        
+        // 推流 pixelBufferOut: H.264编码 推给服务器
+        //        NSLog(@"%s",weakRawDataOutput.rawBytesForImage);
+        //        NSLog(@"处理完一帧就会调用");
+        
+    };
     
     //4.添加处理链
     [self.camera addTarget:beautifyFilter];
@@ -73,7 +89,7 @@
     
     //    [filter addTarget:bilateralFilter];
     // 输出数据
-    //    [bilateralFilter addTarget:rawDataOutput];
+    [beautifyFilter addTarget:rawDataOutput];
     
     // 开始捕获
     [self.camera startCameraCapture];
